@@ -45,5 +45,12 @@ public class UserController {
         result.setSucess(true);
         return result;
     }
-
+    @GetMapping("/getemial/{emial}")
+    public Result findbyemial(@PathVariable String emial){
+        User user = userMapper.selectbyemial(emial);
+        Result result = new Result();
+        result.setSucess(true);
+        result.setData(user);
+        return result;
+    }
 }

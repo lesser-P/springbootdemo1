@@ -12,5 +12,8 @@
     <select id="getall" resultType="User">
         select * from user where username like concat("%" #{username} "%")
     </select>
+    <select id="selectbyemial" resultType="com.ynh.springbootdemo1.domain.User">
+        select *from user where emial = #{emial}
+    </select>
 
 </mapper>

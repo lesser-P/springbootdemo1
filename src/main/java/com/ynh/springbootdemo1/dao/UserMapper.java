@@ -17,4 +17,6 @@ public interface UserMapper {
 
     public List<User> getall(String username);
 
+    public User selectbyemial(String emial);
+
 }

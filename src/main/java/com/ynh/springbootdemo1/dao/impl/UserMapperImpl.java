@@ -29,4 +29,10 @@ public class UserMapperImpl implements UserMapper {
         return userMapper.getall(username);
     }
 
+    @Override
+    public User selectbyemial(String emial) {
+        User user = userMapper.selectbyemial(emial);
+        return user;
+    }
+
 }
